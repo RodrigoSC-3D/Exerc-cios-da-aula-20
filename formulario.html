@@ -1,0 +1,82 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+</head>
+<body>
+    <p><h2>Formulário de cadastro</h2></p>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nome">Nome</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="sobrenome">Sobrenome</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="sobrenome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="endereco">Endereço</label></td>
+            </tr>
+            <tr>
+                <td><input type="endereco" name="endereco" id="endereco" required="true"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <label for="disciplinas">Disciplinas</label><br>
+                </td>
+                <td>
+                    <form>   
+                        <input type="checkbox" id="prof1" name="prof1" value="Programacao">
+                        <label for="prof1"> Programação</label><br>
+                        <input type="checkbox" id="prof2" name="prof2" value="Logica">
+                        <label for="prof2"> Lógica</label><br>
+                        <input type="checkbox" id="prof3" name="prof3" value="Algoritmo">
+                        <label for="prof3"> Algoritimos</label><br>
+                        <input type="checkbox" id="prof4" name="prof4" value="Banco">
+                        <label for="prof4"> Banco de Dados</label><br>
+                        <input type="checkbox" id="prof5" name="prof5" value="Mobile">
+                        <label for="prof5"> Mobile</label><br><br>
+                    </form> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="genero">Gênero</label><br>
+                </td>
+                <td>
+                    <form>
+                        <input type="radio" id="Masculino" name="generos" value="Masculino">
+                        <label for="Masculino">Masculino</label><br>
+                        <input type="radio" id="feminino" name="generos" value="feminino">
+                        <label for="feminino">Feminino</label><br>
+                        <input type="radio" id="nd" name="generos" value="nd">
+                        <label for="nd">Não informar</label><br><br>
+                    </form> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <label for="quantity">Idade:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <form action="/action_page.php">
+            <label for="myfile">Foto de Perfil:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </form>
+</body>
+</html>
